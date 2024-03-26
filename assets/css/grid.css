@@ -1,0 +1,91 @@
+.Grid_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-bottom: 120px;
+}
+
+.Grid_box {
+    background-color: #FDF5E6;
+    bold: 1px solid #000;
+    width: 400px;
+    height: 200px;
+    border: double 4px transparent;
+    border-radius: 16px;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-sizing: border-box;
+    font-size: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 1.5s, color 1.5s, transform 0.6s; /* 添加transform属性以实现更平滑的过渡 */
+    margin: 10px; /* 为了美化田字格之间的间距，可以根据需要调整 */
+}
+
+.Grid_box:hover {
+    transform: scale(1.05); /* 鼠标悬浮时稍微放大 */
+}
+
+.smallText {
+    font-size: 20px;
+}
+/*.Grid_container {*/
+/*    display: flex;*/
+/*    flex-wrap: wrap;*/
+/*    justify-content: space-around;*/
+/*    position: relative;*/
+/*    width: 50%;*/
+/*    margin: 0 auto;*/
+/*}*/
+
+/*.Grid_box {*/
+/*    background-color: #f2f2f2; !* 这是格子的背景色，您可以根据需要更改 *!*/
+/*    color: #333; !* 字体颜色 *!*/
+/*    border: 1px solid #ddd; !* 边框颜色 *!*/
+/*    width: 45%;*/
+/*    height: 150px;*/
+/*    margin: 10px;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    cursor: pointer;*/
+/*    position: relative;*/
+/*}*/
+
+/*.Grid_info {*/
+/*    font-size: 18px; !* 调整字体大小 *!*/
+/*}*/
+
+/*.Grid_tooltip {*/
+/*    width: 200px;*/
+/*    height: 100px;*/
+/*    position: absolute;*/
+/*    padding: 10px;*/
+/*    background: white;*/
+/*    border: 1px solid #ddd;*/
+/*    border-radius: 5px;*/
+/*    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);*/
+/*    opacity: 0;*/
+/*    transition: opacity 0.5s; !* 缓慢显示 *!*/
+/*    pointer-events: none; !* 避免鼠标事件影响气泡 *!*/
+/*}*/
+
+/*.Grid_tooltip::after {*/
+/*    content: '';*/
+/*    position: absolute;*/
+/*    border-style: solid;*/
+/*    !* 根据实际情况调整箭头位置和大小 *!*/
+/*}*/
+
+/*!* 以下是悬浮状态下的格子样式变化 *!*/
+/*.Grid_box:hover {*/
+/*    background-color: #e6e6e6; !* 鼠标悬浮时的背景色 *!*/
+/*}*/
+
+
